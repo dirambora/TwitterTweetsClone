@@ -1,0 +1,14 @@
+/* Avatar.css */
+.avatar {
+    border-radius: 50%;
+    background-color: rgb(29, 161, 242);
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    flex: 0 0 auto;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.3em;
+    font-weight: 200;
+    text-transform: uppercase;
+  }

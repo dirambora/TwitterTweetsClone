@@ -1,0 +1,18 @@
+/* App.css */
+.app {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .app-logo {
+    margin-bottom: 18px;
+  }
+  
+  .separator {
+    background-color: rgb(21, 24, 28);
+    border: 1px solid rgb(47, 51, 54);
+    border-top: 0;
+    border-bottom: 0;
+    height: 10px;
+  }

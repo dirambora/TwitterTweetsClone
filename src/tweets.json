@@ -1,0 +1,22 @@
+[
+    {
+      "id": "1",
+      "created_on": "Sat May 01 12:50:59 +0000 2021",
+      "content": "She is a Software Engineer",
+      "username":"Anonymous",
+      "user": "Anonymous User",
+      "comments_count": 33,
+      "retweets_count": 10,
+      "favorites_count": 20
+    },
+    {
+      "id": "2",
+      "created_on": "Sat May 01 12:51:59 +0000 2021",
+      "content": "In Nairobi,Kenya.",
+      "username":"Asabeneh",
+      "user": "Asabeneh Yetayeh",
+      "comments_count": 10,
+      "retweets_count": 22,
+      "favorites_count": 3
+    }
+  ]

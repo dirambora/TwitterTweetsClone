@@ -1,0 +1,37 @@
+/* ComposeForm.css */
+.compose-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    border: 1px solid rgb(47, 51, 54);
+  }
+  
+  .compose-form-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .compose-form-textarea {
+    background: none;
+    border: 0;
+    outline: none;
+    width: 100%;
+    min-height: 70px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: white;
+  }
+  
+  .compose-form-submit {
+    flex: 0 0 auto;
+    padding: 5px 18px;
+    width: auto;
+    line-height: 28px;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    border-radius: 50px;
+    border: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+  }

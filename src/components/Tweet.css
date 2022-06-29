@@ -1,0 +1,29 @@
+.tweet {
+    padding: 10px;
+  }
+  
+  .tweet-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .tweet-user {
+    font-weight: bold;
+    color: rgb(29, 161, 242);
+    padding-right: 5px;
+  }
+  
+  .tweet-created-on {
+    flex-grow: 1;
+    padding-left: 5px;
+    color: rgb(110, 118, 125);
+  }
+  
+  .tweet-content {
+    padding-left: 16px;
+    padding-bottom: 20px;
+  }
+
+  
+  
