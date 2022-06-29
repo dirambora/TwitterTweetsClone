@@ -5,29 +5,48 @@ import './Tweet.css'
 import { FaHeart } from 'react-icons/fa';
 import { BiMessageRounded } from "react-icons/bi";
 import { FaRetweet } from 'react-icons/fa';
-
+import { FaRegEdit } from 'react-icons/fa';
+import { RiDeleteBin6Line } from "react-icons/ri";
 function Tweet(props) {
-  const { username,user, createdOn, children,useractions } = props
+  const { username,user, createdOn, children,onDelete,tweets } = props
 
   return (
     <div className="tweet">
       <Avatar name={user} />
       <div>
         <div className="tweet-header">
-        <span className="tweet-user">{username}</span>
-          <span className="tweet-user">@{user}</span>
-          <span className="tweet-created-on">{createdOn}</span>
+        <span className="tweet-user">
+          
+        <span className="tweet-username">{username}</span>
+          @{user}
+          </span>
+
         </div>
         <div className="tweet-content">{children}</div>
-        <div className='action-buttons'>
-        <FaHeart className="app-logo" size="1.5em" />
-        <BiMessageRounded className="app-logo" size="1.5em" />
-        <FaRetweet className="app-logo" size="1.5em" />
-        </div>
+        <span className='actions'>
+        <FaRegEdit className="icons-actions" size="1.4em" />
+        <RiDeleteBin6Line className="icons-actions"  onClick={() => onDelete(tweets.id)} size="1.5em" />
+        </span>
+        <span className='action-buttons'>
+        <FaHeart className="icons" size="1.4em" />
+        <BiMessageRounded className="icons" size="1.5em" />
+        <FaRetweet className="icons" size="1.5em" />
+        <span className="created-on">
+          {createdOn}
+        </span>
+        </span>
+        
+
+       
       </div>
     </div>
   )
 }
+
+
+
+
+
 
 Tweet.propTypes = {
   user: PropTypes.string,
