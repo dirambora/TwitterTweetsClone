@@ -3,6 +3,9 @@ import { nanoid } from 'nanoid'
 import ComposeForm from './ComposeForm'
 import Timeline from './Timeline'
 import { FaTwitter } from 'react-icons/fa'
+
+
+
 import './App.css'
 
 
@@ -14,8 +17,14 @@ const CURRENT_USER = 'Diram'
 const SOME_USER ='Deee'
 
 function App() {
+
+  
+ 
+   
   // We now store the tweets in the state of our component
   const [tweets, setTweets] = useState(initialTweets)
+  
+
 
   // This handler will be called when we want to post a new tweet**
   const handlePostTweet = (content) => {
@@ -34,14 +43,37 @@ function App() {
     setTweets([...tweets, newTweet])
   }
 
+  // const handleDelete = (id) => {
+  //   const delTodo = tweets.filter(id);
+  //   setTweets([...delTodo]);
+  // };
+
+  const handleDelete = (id) => {
+    const delTodo = tweets.filter((to) => to.id !== id);
+    setTweets([...delTodo]);
+  };
+
+
+ 
+
   return (
     <div className="app">
       <FaTwitter className="app-logo" size="2em" />
       <ComposeForm onSubmit={handlePostTweet} />
       <div className="separator"></div>
-      <Timeline tweets={tweets} />
+      <Timeline handleDelete={handleDelete} tweets={tweets} 
+     
+     
+      />
+      
+      
     </div>
   )
+
+  
+
+
+
 }
 
 export default App
