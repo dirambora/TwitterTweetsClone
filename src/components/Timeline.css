@@ -13,3 +13,46 @@
   .timeline-item:last-child {
     border-bottom: none;
   }
+
+  
+  .action-buttons{
+
+    
+  }   
+  .app-logo{
+    margin: 9px;
+   }
+
+   .delete-icon{
+    margin: 5px;
+   }
+
+   .edit-icon{
+    margin: 5px;
+   }
+
+  span2{
+    position: absolute;
+    margin-left: 10px;
+    padding: 10px;
+    
+  }
+
+  
+  span1{
+  
+    margin-left: 209px;
+    padding: 18px;
+    
+  }
+  .tweet-created-on {
+
+    padding-left: 25px;
+    color: rgb(110, 118, 125);
+  }
+
+  
+   
+     
+   
+

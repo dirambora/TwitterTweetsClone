@@ -13,16 +13,6 @@
     color: rgb(29, 161, 242);
     
   }
-
-  .tweet-username {
-    font-weight: bold;
-    margin-right: 8px;
-    color: rgb(29, 161, 242);
-    
-  }
-  
-  
-
   .tweet-content {
     padding-left: 16px;
     padding-bottom: 30px;
@@ -33,26 +23,7 @@
     margin-left: 120px;
   }
 
-  .icons{
-    padding: 2px;
-   
-  }
-
-  .icons-actions{
-    padding: 2px;
-  }
-
-  .actions{
-    margin-top: 30px;
-    margin-left: 30px;
-  }
-
-  .created-on {
-    margin-top: 4px;
-    padding-left: 15px;
-    color: rgb(110, 118, 125);
-  }
-  
  
+
   
   
