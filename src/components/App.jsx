@@ -19,12 +19,23 @@ const SOME_USER ='Deee'
 function App() {
 
   
- 
-   
+
   // We now store the tweets in the state of our component
   const [tweets, setTweets] = useState(initialTweets)
-  
+  const [tweetEditing, setTweetEditing] = useState(null);
+  const [editingText, setEditingText] = useState("");
 
+
+  function submitEdits(id) {
+    const updatedTodos = [...tweets].map((todo) => {
+      if (todo.id === id) {
+        todo.text = editingText;
+      }
+      return todo;
+    });
+    setTweets(updatedTodos);
+    setTweetEditing(null);
+  }
 
   // This handler will be called when we want to post a new tweet**
   const handlePostTweet = (content) => {
@@ -47,33 +58,37 @@ function App() {
   //   const delTodo = tweets.filter(id);
   //   setTweets([...delTodo]);
   // };
-
-  const handleDelete = (id) => {
+   const handleDelete = (id) => {
     const delTodo = tweets.filter((to) => to.id !== id);
     setTweets([...delTodo]);
   };
 
+  function handleFormSubmit(e) {
+    e.preventDefault();
 
- 
+    if (tweets !== "") {
+      setTweets([
+        ...tweets,
+        {
+          id: tweets.length + 1,
+          text: tweets.trim()
+        }
+      ]);
+    }
+
+    setTweets("");
+  }
+
 
   return (
     <div className="app">
       <FaTwitter className="app-logo" size="2em" />
       <ComposeForm onSubmit={handlePostTweet} />
       <div className="separator"></div>
-      <Timeline handleDelete={handleDelete} tweets={tweets} 
-     
-     
+      <Timeline handleDelete={handleDelete} handleFormSubmit={handleFormSubmit} tweets={tweets} 
       />
-      
-      
     </div>
   )
-
-  
-
-
-
 }
 
 export default App

@@ -19,17 +19,30 @@
 
     
   }   
-  .app-logo{
-    margin: 9px;
-   }
+  .app-logo-1{
+    margin-left: 160px;
+  }
+
+  .app-log{
+    margin-left: 10px;
+  }
 
    .delete-icon{
-    margin: 5px;
+    margin-top: 25px;
+    margin-right: 10px;
    }
-
-   .edit-icon{
-    margin: 5px;
+   .actions{
+  margin-top: 20px;
    }
+   .btn-action{
+    background-color: #1DA1F2;
+    border-radius: 8px;
+    font-size: 18px;
+   }
+/* 
+   .edit-icon{sss
+    margin-top: 25px;
+   } */
 
   span2{
     position: absolute;
@@ -40,16 +53,26 @@
 
   
   span1{
-  
     margin-left: 209px;
     padding: 18px;
-    
   }
   .tweet-created-on {
 
     padding-left: 25px;
     color: rgb(110, 118, 125);
   }
+/* 
+  .form-textarea{
+    background: none;
+    border: 0;
+    outline: none;
+    width: 100%;
+    min-height: 70px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: white;
+
+  } */
 
   
    
