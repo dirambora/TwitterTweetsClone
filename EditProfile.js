@@ -25,18 +25,20 @@ import 'styled-components/macro';
 
 //Comment Container for styling
 
-export const CommentContainer = styled.div`
-  background-color: #f6f8fa;
-  width: 100%;
-  min-height: 50px;
-  max-height: 70px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 15px;
-  border-top: 1px solid #cadae4;
-  border-bottom: 1px solid #cadae4;
+//Not for all Container Class
+
+// export const CommentContainer = styled.div`
+//   background-color: #f6f8fa;
+//   width: 100%;
+//   min-height: 50px;
+//   max-height: 70px;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 10px 15px;
+//   border-top: 1px solid #cadae4;
+//   border-bottom: 1px solid #cadae4;
 
 function EditProfileContainer() {
   const user = useUser();
